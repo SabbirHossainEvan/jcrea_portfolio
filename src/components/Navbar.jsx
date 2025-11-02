@@ -27,7 +27,7 @@ const Navbar = () => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6 }}
             className={`fixed top-6 p-2 left-1/2 -translate-x-1/2 z-50 w-[95%] md:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 rounded-xl md:rounded-full transition-all duration-300 ${scrolled
-                ? ""
+                ? "bg-[#151515]"
                 : "bg-[#151515]"
                 }`}
         >
