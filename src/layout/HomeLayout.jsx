@@ -2,8 +2,9 @@ import React from 'react';
 
 const HomeLayout = () => {
     return (
-        <div>
+        <div className='text-primary'>
             HomeLayout
+            
         </div>
     );
 };
