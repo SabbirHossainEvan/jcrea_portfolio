@@ -4,25 +4,25 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import profileImage from "../assets/heroImage.png";
 
-const textVariant = {
-  hidden: { opacity: 0, y: 20 },
-  visible: (i = 1) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: i * 0.2,
-      duration: 0.6,
-      ease: "easeOut",
-    },
-  }),
-};
+// const textVariant = {
+//   hidden: { opacity: 0, y: 20 },
+//   visible: (i = 1) => ({
+//     opacity: 1,
+//     y: 0,
+//     transition: {
+//       delay: i * 0.2,
+//       duration: 0.6,
+//       ease: "easeOut",
+//     },
+//   }),
+// };
 
 const HeroSection = () => {
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
   }, []);
 
-  const headingWords = ["I’m", "Jenny,", "Product", "Designer"];
+  // const headingWords = ["I’m", "Jenny,", "Product", "Designer"];
 
   return (
     <section className=" mt-30">
@@ -42,8 +42,8 @@ const HeroSection = () => {
           </button>
 
           {/* Animated Heading */}
-          <h1 className="text-4xl md:text-6xl text-center font-bold text-gray-900 leading-tight flex flex-wrap justify-center md:justify-start gap-2">
-            {headingWords.map((word, i) => (
+          <h1 className="text-4xl md:text-7xl text-center font-semibold mt-6">
+            {/* {headingWords.map((word, i) => (
               <motion.span
                 key={i}
                 custom={i}
@@ -54,7 +54,12 @@ const HeroSection = () => {
               >
                 {word}
               </motion.span>
-            ))}
+            ))} */}
+            
+            <span>I’m</span>
+            <span className="text-primary">Jenny</span>, <br />
+            <span>Product Designer</span>
+            
           </h1>
         </div>
         {/* bottom info */}
@@ -62,10 +67,7 @@ const HeroSection = () => {
           <div>
             {/* Testimonial */}
             <motion.p
-              variants={textVariant}
-              initial="hidden"
-              animate="visible"
-              custom={headingWords.length + 1}
+              
               className="text-gray-600 text-base max-w-md mx-auto md:mx-0 leading-relaxed"
             >
               “Jenny’s exceptional product design ensures our website’s success.
