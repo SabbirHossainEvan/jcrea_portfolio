@@ -25,22 +25,24 @@ const HeroSection = () => {
   const headingWords = ["I’m", "Jenny,", "Product", "Designer"];
 
   return (
-    <section className="relative flex flex-col md:flex-row items-center justify-between px-6 md:px-20 py-16 bg-white overflow-hidden min-h-screen">
+    <section className=" mt-30">
       <div>
         {/* top info */}
         <div>
           {/* Greeting */}
-          <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="inline-flex items-center gap-2 px-4 py-1 border border-gray-300 rounded-full text-sm text-gray-700"
-          >
-            👋 Hello!
-          </motion.div>
+          <button className="block mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="items-center gap-2 px-4 py-1 border border-gray-300 rounded-full text-sm text-gray-700"
+            >
+              Hello!
+            </motion.div>
+          </button>
 
           {/* Animated Heading */}
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight flex flex-wrap justify-center md:justify-start gap-2">
+          <h1 className="text-4xl md:text-6xl text-center font-bold text-gray-900 leading-tight flex flex-wrap justify-center md:justify-start gap-2">
             {headingWords.map((word, i) => (
               <motion.span
                 key={i}
@@ -48,7 +50,7 @@ const HeroSection = () => {
                 variants={textVariant}
                 initial="hidden"
                 animate="visible"
-                className={word.includes("Jenny") ? "text-orange-500" : ""}
+                className={word.includes("Jenny") ? "text-orange-500" : "" }
               >
                 {word}
               </motion.span>
@@ -97,7 +99,7 @@ const HeroSection = () => {
 
         </div>
       </div>
-      
+
     </section>
   );
 };
