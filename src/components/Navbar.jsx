@@ -63,7 +63,7 @@ const Navbar = () => {
                         </motion.button>
                     ))}
 
-                    <div className="flex justify-center ml-12 mr-12">
+                    <div className="flex justify-center ml-12 mr-10">
                         <motion.div
                             whileHover={{ rotate: 360 }}
                             transition={{ duration: 0.8 }}
