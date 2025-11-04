@@ -48,7 +48,7 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="items-center gap-5 px-4 py-1 border border-gray-300 rounded-full text-sm text-gray-700"
+              className="items-center gap-2 px-4 py-1 border border-gray-300 rounded-full text-sm text-gray-700"
             >
               Hello!
             </motion.div>
