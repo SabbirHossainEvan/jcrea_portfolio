@@ -106,8 +106,8 @@ const HeroSection = () => {
               transition={{ delay: 1, duration: 0.8 }}
               className=""
             >
-              <div className="text-orange-500 text-4xl mb-1">★★★★★</div>
-              <p className="text-xl font-bold text-gray-900">10 Years</p>
+              <div className="text-orange-500 text-3xl mb-1">★★★★★</div>
+              <p className="text-4xl font-bold text-gray-900">10 Years</p>
               <p className="text-sm text-gray-500">Experience</p>
             </motion.div>
           </div>
