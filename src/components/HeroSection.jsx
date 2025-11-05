@@ -98,7 +98,7 @@ const HeroSection = () => {
               className="w-64 md:w-full block mx-auto object-contain z-10 -mt-15"
             />
           </div>
-          <div className="col-span-3">
+          <div className="col-span-3 mt-20">
             {/* Experience Badge */}
             <motion.div
               initial={{ opacity: 0, x: 50 }}
