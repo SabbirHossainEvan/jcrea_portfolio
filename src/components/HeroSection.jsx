@@ -108,7 +108,7 @@ const HeroSection = () => {
             >
               <div className="text-orange-500 text-3xl mb-1">★★★★★</div>
               <p className="text-4xl font-bold text-gray-900">10 Years</p>
-              <p className="text-sm text-gray-500">Experience</p>
+              <p className="text-sm text-gray-500 pl-15">Experience</p>
             </motion.div>
           </div>
         </div>
