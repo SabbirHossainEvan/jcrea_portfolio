@@ -38,7 +38,7 @@ const HeroSection = () => {
   // const headingWords = ["I’m", "Jenny,", "Product", "Designer"];
 
   return (
-    <section className=" mt-30">
+    <section className=" mt-25 md:mt-30">
       <div>
         {/* top info */}
         <div>
