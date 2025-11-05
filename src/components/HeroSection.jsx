@@ -76,7 +76,7 @@ const HeroSection = () => {
           </h1>
         </div>
         {/* chanter info */}
-        <div className="grid grid-cols-12 gap-2">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-2">
           <div className="col-span-3 mt-20 font-bold">
             {/* Testimonial */}
             <motion.p
@@ -87,7 +87,7 @@ const HeroSection = () => {
               Highly recommended.”
             </motion.p>
           </div>
-          <div className="col-span-6">
+          <div className="col-span-1 md:col-span-6">
             {/* Profile Image */}
             <motion.img
               initial={{ opacity: 0, y: 40 }}
