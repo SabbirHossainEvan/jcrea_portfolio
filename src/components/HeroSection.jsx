@@ -139,7 +139,7 @@ const HeroSection = () => {
               variants={buttonVariants}
               whileHover="hover"
               whileTap="tap"
-              className="relative border-2 border-orange-500 text-orange-500 font-semibold px-8 py-3 rounded-full overflow-hidden transition-all duration-300"
+              className="relative  border-orange-500 text-orange-500 font-semibold px-8 py-3 rounded-full overflow-hidden transition-all duration-300"
             >
               <motion.span
                 className="absolute inset-0 bg-gradient-to-r from-orange-500 to-pink-500 opacity-0"
