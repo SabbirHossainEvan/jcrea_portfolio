@@ -62,7 +62,7 @@ const WorkExperience = () => {
 
               {/* Center circle */}
               <div className="relative flex justify-center items-center md:col-start-2 md:col-end-3">
-                <div className="absolute w-6 h-6 rounded-full border border-dashed border-gray-400 flex justify-center items-center">
+                <div className="absolute w-6 h-6 rounded-full border-4 border-dashed border-gray-400 flex justify-center items-center">
                   <div className={`w-3 h-3 rounded-full ${exp.color}`}></div>
                 </div>
               </div>
