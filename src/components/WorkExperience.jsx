@@ -72,7 +72,7 @@ const WorkExperience = () => {
                 <h4 className="text-lg md:text-xl font-semibold text-gray-900">
                   {exp.role}
                 </h4>
-                <p className="text-gray-500 text-sm leading-relaxed mt-1">
+                <p className="text-gray-500 text-sm leading-relaxed mt-4">
                   {exp.description}
                 </p>
               </div>
