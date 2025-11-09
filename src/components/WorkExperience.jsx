@@ -31,9 +31,9 @@ const experiences = [
 const WorkExperience = () => {
   return (
     <section className="py-20 bg-white">
-      <div className="max-w-6xl mx-auto px-12">
+      <div className="max-w-6xl mx-auto px-6">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-18">
           <h2 className="text-4xl font-bold text-gray-900">
             My <span className="text-orange-500">Work Experience</span>
           </h2>
