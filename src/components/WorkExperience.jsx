@@ -53,8 +53,8 @@ const WorkExperience = () => {
               viewport={{ once: true }}
             >
               {/* Left content */}
-              <div className="bg-transparent md:col-start-1 md:col-end-2 md:mr-auto text-left md:text-right">
-                <h3 className="text-lg md:text-xl font-semibold text-gray-900">
+              <div className="bg-transparent md:col-start-1 md:col-end-2  text-left md:text-right">
+                <h3 className="text-lg md:text-3xl font-semibold text-gray-900">
                   {exp.company}
                 </h3>
                 <p className="text-gray-500">{exp.date}</p>
@@ -62,14 +62,14 @@ const WorkExperience = () => {
 
               {/* Center circle */}
               <div className="relative flex justify-center items-center md:col-start-2 md:col-end-3">
-                <div className="absolute w-6 h-6 rounded-full border-4 border-dashed border-gray-400 flex justify-center items-center">
-                  <div className={`w-3 h-3 rounded-full ${exp.color}`}></div>
+                <div className="absolute md:block hidden w-6 h-6 rounded-full border-4 border-dashed border-gray-400 flex justify-center items-center">
+                  <div className={`w-3 h-3 md:block hidden rounded-full ${exp.color}`}></div>
                 </div>
               </div>
 
               {/* Right content */}
               <div className="bg-transparent md:col-start-3 md:col-end-4 md:ml-auto text-left">
-                <h4 className="text-lg md:text-xl font-semibold text-gray-900">
+                <h4 className="text-lg md:text-3xl font-semibold text-gray-900">
                   {exp.role}
                 </h4>
                 <p className="text-gray-500 text-sm leading-relaxed mt-1">
