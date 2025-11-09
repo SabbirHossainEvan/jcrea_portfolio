@@ -95,10 +95,10 @@ const HeroSection = () => {
               transition={{ delay: 0.8, duration: 1 }}
               src={profileImage} // your transparent image
               alt="Jenny"
-              className="w-64 md:w-full block mx-auto object-contain z-10 -mt-15"
+              className="w-94 md:w-full block mx-auto object-contain z-10 -mt-5 md:-mt-15"
             />
           </div>
-          <div className="col-span-3 mt-20">
+          <div className="col-span-3 mt-0 block mx-auto md:mt-20">
             {/* Experience Badge */}
             <motion.div
               initial={{ opacity: 0, x: 50 }}
@@ -107,14 +107,14 @@ const HeroSection = () => {
               className=""
             >
               <div className="text-orange-500 text-3xl mb-1">★★★★★</div>
-              <p className="text-4xl font-bold text-gray-900">10 Years</p>
-              <p className="text-sm text-gray-500 pl-15">Experience</p>
+              <p className="text-3xl md:text-4xl text-center md:text-start  font-bold text-gray-900">10 Years</p>
+              <p className="text-sm text-gray-500 pl-0 md:text-start text-center md:pl-15">Experience</p>
             </motion.div>
           </div>
         </div>
         {/* bottom info */}
         <div>
-          <div id="hero_btn" className="flex flex-wrap gap-2 items-center justify-center">
+          <div id="hero_btn" className="flex flex-wrap gap-2 items-center mt-5 md:-mt-20 mb-5 justify-center">
             {/* Portfolio Button */}
             <motion.a
               href="#portfolio"
@@ -139,7 +139,7 @@ const HeroSection = () => {
               variants={buttonVariants}
               whileHover="hover"
               whileTap="tap"
-              className="relative border-2 border-orange-500 text-orange-500 font-semibold px-8 py-3 rounded-full overflow-hidden transition-all duration-300"
+              className="relative border-2 border-orange-500 text-orange-500 font-semibold px-8 py-2 rounded-full overflow-hidden transition-all duration-300"
             >
               <motion.span
                 className="absolute inset-0 bg-gradient-to-r from-orange-500 to-pink-500 opacity-0"
