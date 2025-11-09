@@ -77,7 +77,7 @@ const HeroSection = () => {
         </div>
         {/* chanter info */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-2">
-          <div className="col-span-3 mt-20 font-bold">
+          <div className="col-span-3 mt-5 text-center md:text-start md:mt-20 font-bold">
             {/* Testimonial */}
             <motion.p
 
