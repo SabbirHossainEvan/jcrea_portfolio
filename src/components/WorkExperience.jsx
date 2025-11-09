@@ -30,11 +30,11 @@ const experiences = [
 
 const WorkExperience = () => {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-15 bg-white">
       <div className="max-w-6xl mx-auto px-6">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900">
+        <div className="text-center md:mb-15">
+          <h2 className="text-3xl md:text-5xl font-bold text-gray-900">
             My <span className="text-orange-500">Work Experience</span>
           </h2>
         </div>
@@ -53,26 +53,26 @@ const WorkExperience = () => {
               viewport={{ once: true }}
             >
               {/* Left content */}
-              <div className="bg-transparent md:col-start-1 md:col-end-2  text-left md:text-right">
-                <h3 className="text-lg md:text-3xl font-semibold text-gray-900">
+              <div className="bg-transparent md:col-start-1 md:col-end-2 mt-5 md:mt-0 text-left md:text-right">
+                <h3 className="text-xl md:text-3xl font-semibold text-gray-900">
                   {exp.company}
                 </h3>
-                <p className="text-gray-500">{exp.date}</p>
+                <p className="text-gray-400 text-sm">{exp.date}</p>
               </div>
 
               {/* Center circle */}
               <div className="relative flex justify-center items-center md:col-start-2 md:col-end-3">
-                <div className="absolute md:block hidden w-6 h-6 rounded-full border-4 border-dashed border-gray-400 flex justify-center items-center">
-                  <div className={`w-3 h-3 md:block hidden rounded-full ${exp.color}`}></div>
+                <div className="absolute md:block hidden w-8 h-8 rounded-full border-4 border-dashed border-gray-400 flex justify-center items-center">
+                  <div className={`w-6 h-6 md:block hidden rounded-full ${exp.color}`}></div>
                 </div>
               </div>
 
               {/* Right content */}
               <div className="bg-transparent md:col-start-3 md:col-end-4 md:ml-auto text-left">
-                <h4 className="text-lg md:text-3xl font-semibold text-gray-900">
+                <h4 className="text-md md:text-3xl font-semibold text-gray-800">
                   {exp.role}
                 </h4>
-                <p className="text-gray-500 text-sm leading-relaxed mt-1">
+                <p className="text-gray-400 text-sm leading-relaxed mt-1">
                   {exp.description}
                 </p>
               </div>
