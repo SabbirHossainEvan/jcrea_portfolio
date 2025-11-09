@@ -39,7 +39,7 @@ const WorkExperience = () => {
           </h2>
         </div>
 
-        <div className="relative flex flex-col md:grid md:grid-cols-1 gap-2">
+        <div className="relative flex flex-col md:grid md:grid-cols-3 gap-12">
           {/* Center line */}
           <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full border-l-2 border-dashed border-gray-300"></div>
 
