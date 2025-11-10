@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 
 export default function HireMeSection() {
   const stats = [
-    { id: 1, number: "450+", label: "Project Completed" },
-    { id: 2, number: "450+", label: "Project Completed" },
+    { id: 1, number: 450, label: "Project Completed" },
+    { id: 2, number: 450, label: "Project Completed" },
   ];
 
   return (
@@ -16,9 +16,9 @@ export default function HireMeSection() {
         transition={{ duration: 0.8 }}
         className="relative flex justify-center items-center"
       >
-        <div className="w-64 h-80 md:w-80 md:h-[380px] bg-orange-300 rounded-3xl absolute"></div>
+        <div className="w-64 h-80 md:w-80 md:h-[380px] bg-orange-300 rounded-3xl absolute animate-pulse"></div>
         <img
-          src="/images/hireme.png" // replace with your image
+          src="/images/hireme.png"
           alt="Hire Me"
           className="w-64 md:w-80 relative z-10 object-cover"
         />
@@ -45,12 +45,10 @@ export default function HireMeSection() {
             <motion.div
               key={item.id}
               initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3 * item.id }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 * item.id }}
             >
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900">
-                {item.number}
-              </h3>
+              <Counter number={item.number} />
               <p className="text-gray-500 text-sm md:text-base">{item.label}</p>
             </motion.div>
           ))}
@@ -58,13 +56,41 @@ export default function HireMeSection() {
 
         {/* Button */}
         <motion.button
-          whileHover={{ scale: 1.05 }}
+          whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
-          className="px-8 py-3 border border-gray-700 rounded-xl text-gray-800 font-semibold text-lg shadow-sm"
+          className="px-8 py-3 border border-gray-700 rounded-xl text-gray-800 font-semibold text-lg shadow-sm hover:bg-gray-800 hover:text-white transition"
         >
           Hire me
         </motion.button>
       </motion.div>
     </section>
+  );
+}
+
+// Counter Component with Animation
+function Counter({ number }) {
+  const [count, setCount] = React.useState(0);
+
+  React.useEffect(() => {
+    let start = 0;
+    const end = number;
+    const duration = 1500;
+    const increment = end / (duration / 16);
+
+    const counter = setInterval(() => {
+      start += increment;
+      if (start >= end) {
+        clearInterval(counter);
+        setCount(end);
+      } else {
+        setCount(Math.floor(start));
+      }
+    }, 16);
+
+    return () => clearInterval(counter);
+  }, [number]);
+
+  return (
+    <h3 className="text-2xl md:text-3xl font-bold text-gray-900">{count}+</h3>
   );
 }

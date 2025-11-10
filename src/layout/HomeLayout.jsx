@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import ServicesSection from '../components/ServicesSection';
 import WorkExperience from '../components/WorkExperience';
+import HireMeSection from '../components/HireMeSection';
 
 const HomeLayout = () => {
     return (
@@ -19,6 +20,9 @@ const HomeLayout = () => {
                 </section>
                 <section>
                     <WorkExperience></WorkExperience>
+                </section>
+                <section>
+                    <HireMeSection></HireMeSection>
                 </section>
             </main>
         </div>
