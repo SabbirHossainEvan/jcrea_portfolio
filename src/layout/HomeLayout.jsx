@@ -6,6 +6,7 @@ import WorkExperience from '../components/WorkExperience';
 import HireMeSection from '../components/HireMeSection';
 import PortfolioSection from '../components/PortfolioSection';
 import PortfolioSectionDown from '../components/PortfolioSectonDown';
+import TestimonialsSection from '../components/TestimonialsSection';
 
 const HomeLayout = () => {
     return (
@@ -31,6 +32,9 @@ const HomeLayout = () => {
                 </section>
                 <section>
                     <PortfolioSectionDown></PortfolioSectionDown>
+                </section>
+                <section>
+                    <TestimonialsSection></TestimonialsSection>
                 </section>
             </main>
         </div>
