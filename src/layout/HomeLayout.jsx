@@ -4,6 +4,7 @@ import HeroSection from '../components/HeroSection';
 import ServicesSection from '../components/ServicesSection';
 import WorkExperience from '../components/WorkExperience';
 import HireMeSection from '../components/HireMeSection';
+import PortfolioSection from '../components/PortfolioSection';
 
 const HomeLayout = () => {
     return (
@@ -23,6 +24,9 @@ const HomeLayout = () => {
                 </section>
                 <section>
                     <HireMeSection></HireMeSection>
+                </section>
+                <section>
+                    <PortfolioSection></PortfolioSection>
                 </section>
             </main>
         </div>
