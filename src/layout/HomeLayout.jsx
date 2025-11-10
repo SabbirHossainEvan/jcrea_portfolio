@@ -5,6 +5,7 @@ import ServicesSection from '../components/ServicesSection';
 import WorkExperience from '../components/WorkExperience';
 import HireMeSection from '../components/HireMeSection';
 import PortfolioSection from '../components/PortfolioSection';
+import PortfolioSectionDown from '../components/PortfolioSectonDown';
 
 const HomeLayout = () => {
     return (
@@ -27,6 +28,9 @@ const HomeLayout = () => {
                 </section>
                 <section>
                     <PortfolioSection></PortfolioSection>
+                </section>
+                <section>
+                    <PortfolioSectionDown></PortfolioSectionDown>
                 </section>
             </main>
         </div>
