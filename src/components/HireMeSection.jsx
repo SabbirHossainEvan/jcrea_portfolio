@@ -72,20 +72,17 @@ function Counter({ number }) {
   const [count, setCount] = React.useState(0);
 
   React.useEffect(() => {
-    let start = 0;
-    const end = number;
-    const duration = 1500;
-    const increment = end / (duration / 16);
+    let current = 0;
 
     const counter = setInterval(() => {
-      start += increment;
-      if (start >= end) {
+      current += 1; // increase 1 by 1
+      if (current >= number) {
         clearInterval(counter);
-        setCount(end);
+        setCount(number);
       } else {
-        setCount(Math.floor(start));
+        setCount(current);
       }
-    }, 16);
+    }, 10); // speed (10ms per step)
 
     return () => clearInterval(counter);
   }, [number]);
