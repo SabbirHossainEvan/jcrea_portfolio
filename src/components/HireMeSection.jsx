@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import hireMeImage from "../assets/Frame 75.png";
 
 export default function HireMeSection() {
   const stats = [
@@ -14,13 +15,12 @@ export default function HireMeSection() {
         initial={{ x: -80, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.8 }}
-        className="relative flex justify-center items-center"
+        className=" justify-center items-center"
       >
-        <div className="w-64 h-80 md:w-80 md:h-[380px] bg-orange-300 rounded-3xl absolute animate-pulse"></div>
         <img
-          src="/images/hireme.png"
+          src={hireMeImage}
           alt="Hire Me"
-          className="w-64 md:w-80 relative z-10 object-cover"
+          className="w-64 md:w-85 relative z-10 object-cover"
         />
       </motion.div>
 
