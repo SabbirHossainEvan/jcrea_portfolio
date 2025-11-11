@@ -63,7 +63,7 @@ export default function ProjectDiscussSection() {
             {/* Animated Diagonal Marquee */}
 
             <div className=" mt-10">
-                <div className="bg-orange-500 p-0 text-white font-semibold text-lg md:text-xl  shadow-[0_0_20px_rgba(255,100,0,0.3)] hover:shadow-[0_0_35px_rgba(255,100,0,0.5)] transition-all duration-1000">
+                <div className="bg-orange-500 p-5 text-white font-semibold text-lg md:text-xl  shadow-[0_0_20px_rgba(255,100,0,0.3)] hover:shadow-[0_0_35px_rgba(255,100,0,0.5)] transition-all duration-1000">
                     <Marquee>
                         <div className="whitespace-nowrap animate-marquee  flex gap-12 hover:animate-marquee-hover">
                             <span className="animate-bounce-slow">✦ UX Design</span>
