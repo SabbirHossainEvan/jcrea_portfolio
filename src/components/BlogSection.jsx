@@ -116,7 +116,7 @@ const BlogSection = () => {
         {/* --- Header & Button --- */}
         <div className="flex justify-between items-center mb-10">
           <h2 className="text-4xl font-extrabold text-gray-900">
-            From my blog post
+            From my <br /> blog post
           </h2>
           {/* See All Button matching the visual style */}
           <button className="px-6 py-2 bg-orange-500 text-white font-semibold rounded-lg shadow-md hover:bg-orange-600 transition duration-300">
