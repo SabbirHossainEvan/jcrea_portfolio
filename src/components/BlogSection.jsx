@@ -22,7 +22,7 @@ const blogPosts = [
     author: 'Jayesh Patil',
     date: '09 Oct, 2023',
     title: 'Sugee: Loan Management System for Rural Sector.',
-    image: '/images/post-image-2.png', // Placeholder URL - update this!
+    image: '/src/assets/Rectangle 6 (1).png', // Placeholder URL - update this!
     alt: 'Sugee app dashboard screenshot',
     link: '#',
     styles: {
