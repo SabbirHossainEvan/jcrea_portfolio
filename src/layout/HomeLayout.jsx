@@ -8,6 +8,7 @@ import PortfolioSection from '../components/PortfolioSection';
 import PortfolioSectionDown from '../components/PortfolioSectonDown';
 import TestimonialsSection from '../components/TestimonialsSection';
 import ProjectDiscussSection from '../components/ProjectDiscussSection';
+import BlogSection from '../components/BlogSection';
 
 const HomeLayout = () => {
     return (
@@ -39,6 +40,9 @@ const HomeLayout = () => {
                 </section>
                 <section>
                     <ProjectDiscussSection></ProjectDiscussSection>
+                </section>
+                <section>
+                    <BlogSection></BlogSection>
                 </section>
             </main>
         </div>
