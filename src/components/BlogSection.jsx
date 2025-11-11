@@ -7,7 +7,7 @@ const blogPosts = [
     author: 'Jayesh Patil',
     date: '10 Nov, 2023',
     title: 'Design Unraveled: Behind the Scenes of UI/UX Magic',
-    image: '/images/post-image-1.png', // Placeholder URL - update this!
+    image: '/src/assets/Rectangle 6.png', // Placeholder URL - update this!
     alt: 'UI/UX design of a psychedelic music player',
     link: '#',
     // Custom styles derived from the visual design (Tailwind classes)
