@@ -29,7 +29,7 @@ const HomeLayout = () => {
                     <HireMeSection></HireMeSection>
                 </section>
                 <section>
-                    <PortfolioSection></PortfolioSection>
+                    {/* <PortfolioSection></PortfolioSection> */}
                 </section>
                 <section>
                     <PortfolioSectionDown></PortfolioSectionDown>
