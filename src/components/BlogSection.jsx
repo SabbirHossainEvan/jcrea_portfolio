@@ -94,7 +94,7 @@ const BlogCard = ({ post }) => {
             {/* Orange dot indicator */}
             <span className="inline-block w-2 h-2 mr-2 rounded-full bg-orange-500"></span>
             {post.author}
-            <span className="mx-2">amr bal•</span>
+            <span className="mx-2">amr•</span>
             {post.date}
           </p>
           {/* Title - changes color on hover */}
