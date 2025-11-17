@@ -126,7 +126,7 @@ const BlogSection = () => {
 
         {/* --- Cards Container --- */}
         {/* md:flex-row creates the horizontal layout on medium screens and up */}
-        <div className="flex flex-col md:flex-row -m-">
+        <div className="flex flex-col md:flex-row -m">
           {blogPosts.map(post => (
             <BlogCard key={post.id} post={post} />
           ))}
