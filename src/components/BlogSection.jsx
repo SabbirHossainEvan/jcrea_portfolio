@@ -111,7 +111,7 @@ const BlogCard = ({ post }) => {
 // --- Main BlogSection Component ---
 const BlogSection = () => {
   return (
-    <section className="py-12 px-4 sm:px-6 lg:px-8 bg-white">
+    <section className="py-12 px- sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         {/* --- Header & Button --- */}
         <div className="flex justify-between items-center mb-10">
